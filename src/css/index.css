@@ -1,0 +1,899 @@
+/* RESET CSS
+http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+a {
+    text-decoration: none;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* End of reset CSS */
+/* CSS VARIABLES SET */
+
+:root {
+    --darkblue: #061D47;
+    --grey: #E2E2E2;
+    --lightblue: #3E85DF;
+    --peach: #F0BD8C;
+}
+
+/*BODY BACKGROUND-COLOR*/
+
+body{
+    background-color: var(--darkblue);
+}
+
+/* LANDING PAGE MOBILE VERSION (Erwan) */
+
+.logo-landing-container{
+    margin-top: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-landing{
+    width: 90%;
+}
+
+.text-landing-container{
+    text-align: center;
+    margin: 15% 0 5% 0;
+
+}
+
+.text-landing{
+    color: var(--grey);
+    font-size: 3rem;
+    font-family: forma-djr-deck, sans-serif;
+}
+
+.button-landing-container{
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5rem;
+    margin: 30px;
+}
+
+.button-landing{
+    display: block;
+    width: 12rem;
+    height: 3rem;
+    border-radius: 25px;
+    border: none;
+    background-color: var(--peach);
+    font-family: forma-djr-text, sans-serif;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--darkblue);
+}
+
+.bl-two {
+    background-color: var(--darkblue);
+    border: solid var(--peach);
+    color: var(--peach);
+}
+
+/* LOGIN PAGE MOBILE VERSION (Erwan) */
+
+.input-login-container{
+    display: flex;
+    width: 15em;
+    flex-direction: column;
+    text-align: left;
+    margin: auto;
+    margin-top: 15%;
+}
+
+.input-label{
+    color: var(--grey);
+    font-family: forma-djr-text, sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 0.5em;
+}
+
+.input-field{
+    background-color: var(--grey);
+    border-radius: 20px;
+    height: 2rem;
+    outline: none;
+    font-size: 1.2rem;
+    font-family: forma-djr-text, sans-serif;
+}
+
+.next-button-container{
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+.button-next-beginning{
+    border-radius: 20px;
+    background-color: var(--peach);
+    color: var(--darkblue);
+    font-family: forma-djr-text, sans-serif;
+    width: 5rem;
+    height: 2rem;
+    border: none;
+    font-size: 1.2rem;
+}
+
+/* SIGN UP PAGE MOBILE VERSION (Erwan) */
+
+.photo-signup-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: var(--grey) 2px solid;
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+    margin: auto;
+    margin-top: 10%;
+}
+
+.photo-signup{
+    color: var(--grey);
+}
+
+/* WELCOME PAGE MOBILE VERSION  (Igor) */
+
+.welcome-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--grey);
+    font-family: forma-djr-text, sans-serif;
+    justify-content: center;
+    height: 100vh;
+}
+
+.welcome-heading {
+    font-size: 2.5em;
+    margin-bottom: 1.5em;
+}
+
+.welcome-text {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0 2em 2em;
+}
+
+.welcome-icon {
+    font-size: 10rem;
+}
+
+.welcome-logo {
+    width: 15em;
+}
+
+/* PROFILE PAGE MOBILE VERSION (Magdalena) */
+.profile-page-left,
+.profile-page-right {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: var(--grey);
+    padding: 10px;
+    margin: 10px;
+    font-size: 1.1em;
+    font-family: forma-djr-text, sans-serif;
+ }
+ 
+ .left-on-desktop {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: var(--grey);
+    padding: 10px;
+    margin: 10px;
+    font-size: 1.1em;
+    font-family: forma-djr-text, sans-serif;
+}
+
+ .settings-icon-outer {
+    position: absolute;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+ }
+
+.settings-icon svg {
+    color: var(--grey);
+    height: 100%;
+    width: 100%;
+}
+
+.profile-separator {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.profile-username {
+    font-size: 1.2em;
+    text-align: center;
+    margin: 0.5em 0.5em 0.5em; 
+}
+
+.profile-section-line {
+    width: 90%;
+}
+
+.profile-image {
+    margin: 1em 0em 1.5em 1.5em;
+}
+
+.profile-statistics {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.profile-statistics-stats-outer h1 {
+    font-size: 1.2em;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.profile-statistics-stats {
+    display: flex;
+    width: 100%;
+}
+
+.profile-statistics-badges {
+    margin-top: 20px;
+    display: flex;
+    gap: 26px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: stretch;
+}
+
+.profile-statistics-badges > div > img {
+    height: 100%;
+    width: 100%;
+}
+
+.profile-history {
+    margin-top: 15px;
+    width: 90%;
+}
+
+.profile-history-cards-outer {
+    width: 100%;
+    overflow-y: hidden; /* no scroll on y-axis (up-down), only x-axis (left-right) */
+    overflow-x: scroll;
+}
+
+.profile-history-cards {
+    display: flex;
+    width: fit-content;
+    gap: 20px;
+}
+
+.profile-statistics-badges > div {
+    width: 60px;
+    height: 60px;
+}
+
+.profile-statistics-stats .left,
+.profile-statistics-stats .center,
+.profile-statistics-stats .right {
+    width: 33%;
+}
+
+.profile-statistics-stats .left {
+    text-align: left;
+}
+
+.profile-statistics-stats .center {
+    text-align: center;
+}
+
+.profile-statistics-stats .right {
+    text-align: right;
+}
+
+.profile-bio {
+    text-align: center;
+}
+
+.follow-button {
+    background: none;
+	color: var(--grey);
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;  
+}
+
+/* FOLLOWING/FOLLOWERS PAGE (MAGDALENA) */
+.following-back-outer {
+    display: flex;
+    gap: 35px;
+    width: 500px;
+    justify-content: space-between;
+    
+}
+
+.search-container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    top: 0;
+    width: 100%;
+    background-color: var(--darkblue);
+    z-index: 9999;
+    padding-bottom: 1em;
+}
+
+.button-seeprofile {
+    border-radius: 20px;
+    background-color: var(--peach);
+    color: var(--darkblue);
+    font-family: forma-djr-text, sans-serif;
+    width: 8rem;
+    height: 2rem;
+    border: none;
+    font-size: 1.2rem;
+}
+
+.example-user-list-container {
+    display: flex;
+    font-family: forma-djr-text, sans-serif;
+    margin: 10px;
+    align-content: center;
+    justify-content: center;
+}
+
+.follower-list-item {
+    color: white;
+    display: flex;
+    align-items: center;
+    max-width: 390px;
+}
+
+
+/* SETTINGS STYLE (MAGDALENA) */
+.settings-icon-desktop {
+    display: none;
+}
+
+.settings-main {
+    font-family: forma-djr-text, sans-serif;
+}
+
+.settings-holder {
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    row-gap: 35px;
+}
+
+.settings-main .back-button-container {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.settings-main .back-button-container, .settings-item {
+    max-width: 500px; /* looks better on desktop */
+}
+
+.settings-item {
+    color: white;
+    display: flex;
+}
+
+.settings-item-icon {
+    width:50px;
+    display: flex;
+    align-content: space-around;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding-right: 15px;
+}
+
+.settings-item-icon svg {
+    width: 30px;
+    height: 30px;
+}
+
+.settings-item-action {
+    padding-left: 15px;
+    text-align: center;
+    font-size: 30px;
+    display: flex;
+    align-content: space-around;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.settings-item-text {
+    width: 280px
+}
+
+.settings-item-text h2 {
+    font-size: 1.2rem;
+}
+
+/* BACK BUTTON */
+.button-back {
+    border-radius: 20px;
+    background-color: var(--peach);
+    color: var(--darkblue);
+    font-family: forma-djr-text, sans-serif;
+    width: 5rem;
+    height: 2rem;
+    border: none;
+    font-size: 1.2rem;
+}
+
+/* CURRENT PAGE STYLING (ERWAN) */
+
+.first-heading-current{
+    font-family: forma-djr-text, sans-serif;
+    color: #e2e2e2;
+    font-size: 1.5rem;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+.heading-current{
+    font-family: forma-djr-text, sans-serif;
+    color: #e2e2e2;
+    font-size: 1.5rem;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+/* EXLORE PAGE STYLING (KATE) */
+.search-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--darkblue);
+    z-index: 9999;
+    padding-bottom: 1em;
+}
+
+.search-form {
+    margin-top: 5%;
+    margin-left: 3%;
+    background-color: var(--grey);
+    border-radius: 20px;
+    height: 2.5rem;
+    outline: none;
+    font-size: 1.2rem;
+    font-family: forma-djr-text, sans-serif;
+    display: flex;
+    width: 75%;
+}
+
+.search-input {
+    border: none;
+    background: transparent;
+    padding: 7px 8px;
+    font-size: 14px;
+    color: inherit;
+    border: 1px solid transparent;
+    border-radius: inherit;
+    margin-right: 20%;
+}
+
+.search-button {
+    text-indent: -999px;
+    overflow: hidden;
+    width: 40px;
+    border: 1px solid transparent;
+    border-radius: inherit;
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+    cursor: pointer;
+    opacity: 0.7;
+  }
+
+.search-button:hover {
+    opacity: 1
+}
+
+.search-button:focus,
+.search-input:focus {
+  outline: none;
+}
+
+.filter-icon {
+    color: var(--grey);
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    overflow-y: scroll;
+    padding-bottom: 5%;
+}
+
+.seriesrow {
+    display: flex;
+}
+
+.for-you-main {
+    margin-top: 6rem;
+    margin-left: 2rem;
+}
+
+.trending-main {
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.themes-main {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 6rem;
+}
+
+.explore-heading-one {
+    font-family: forma-djr-text, sans-serif;
+    color: #e2e2e2;
+    font-size: 1.5rem;
+}
+
+.cards-container::-webkit-scrollbar {
+    display: none;
+}
+
+.cards-container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+/* DESCRIPTION PAGE (KATE) */
+.background1 {
+    background-color: var(--darkblue);
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+.background2 {
+    background-color: var(--darkblue);
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+.background3 {
+    background-color: var(--darkblue);
+    padding-bottom: 25%;
+    padding-top: 5%;
+}
+
+.header-description {
+    font-family: forma-djr-deck, sans-serif;
+    color: #e2e2e2;
+    padding-top: 10%;
+    font-size: 1.5rem;
+    padding-left: 5%;
+}
+
+.text-description {
+    font-family: forma-djr-text, sans-serif;
+    color: #e2e2e2;
+    padding-left: 5%;
+}
+
+.desktop-only {
+    display: none;
+}
+
+/* Desktop invisible (Igor) */
+
+.landingpage-left {
+    display: none;
+}
+
+.emptyseries {
+    font-family: forma-djr-text, sans-serif;
+    color: var(--grey);
+    font-size: 1.2em;
+    margin-left: 2.5em;
+}
+
+/* IMPORTANT */
+/* ! ! ! ! ! DESKTOP VERSIONS ! ! ! ! ! */
+
+@media only screen and (min-width: 1000px) {
+
+    .mobile {
+        display: none;
+    }
+
+    /* LANDING PAGE + LOGIN PAGE + SIGNUP PAGE (Igor & Kate) */
+    .landingpage-left {
+        display: flex;
+        flex-direction: column;
+        width: 55%;
+        background-image: url('../img/seriesbackground.png');
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .landingpage-right, .loginpage-right, .signuppage-right {
+        width: 45%;
+    }
+
+    .landing-main, .loginpage-main, .signuppage-main {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .landing-welcome-heading {
+        color: var(--grey);
+        font-family: forma-djr-text, sans-serif;
+        font-size: 3em;
+    }
+
+    .text-landing-container {
+        margin: 0;
+    }
+
+    .landing-welcome-heading {
+        font-size: 5rem;
+    }
+
+    .logo-landing {
+        width: 35rem;
+    }
+
+    .button-landing {
+        border-radius: 50px;
+        width: 15rem;
+        height: 5rem;
+        font-size: 3rem;
+    }
+
+    .bl-one:hover {
+        transition: 1s;
+        border: solid var(--peach);
+        color: var(--peach);
+        background-color: var(--darkblue);
+    }
+
+    .bl-two:hover {
+        transition: 1s;
+        border: solid var(--darkblue);
+        color: var(--darkblue);
+        background-color: var(--peach);
+    }
+
+    .landing-welcome-cont, .landing-welcome-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .landing-welcome-cont {
+        margin-bottom: 2em;
+    }
+
+    .photo-signup-container {
+        width: 9em;
+        height: 9em;
+        margin-top: 5%;
+    }
+
+    .input-login-container {
+        width: 20em;
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+    }
+
+    .input-label {
+        font-size: 1.5rem;
+    }
+
+    .input-field {
+        height: 3.5rem;
+        border-radius: 45px;
+    }
+
+    .button-next-beginning {
+        cursor: pointer;
+        width: 6rem;
+        height: 2.5rem;
+        font-size: 1.5rem;
+    }
+    
+    .welcome-logo {
+        width: 20rem;
+    }
+    /* end of landing and login pages */
+
+    /* EXPLORE PAGE DESKTOP (Igor & Kate) */
+
+    .search-input {
+        margin-right: 60%;
+    }
+
+    .search-container {
+        position: initial;
+    }
+
+    .search-form, .search-input {
+        width: 40%;
+        height: 3rem;
+    }
+
+    .for-you-main {
+        margin-top: 4rem;
+    }
+
+    .explore-heading-one {
+        padding-top: 30px;
+        font-size: 2.5rem;
+    }
+
+    .cards-container {
+        padding-bottom: 3%;
+    }
+    
+    .cards-container::-webkit-scrollbar {
+        display: contents;
+        height: 10px;
+        width: 0;
+    }
+
+    .cards-container::-webkit-scrollbar-track {
+        background: var(--darkblue);
+        margin-left: 30px;
+      }
+
+    .cards-container::-webkit-scrollbar-thumb {
+        background: var(--peach);
+        border-radius: 20px;
+      }
+
+    .cards-container::-webkit-scrollbar-thumb:hover {
+        background: #a07e5e; 
+      }
+
+    /* SETTINGS PAGE (MAGGIE) */
+    .settings-icon-mobile {
+        display: none;
+    }
+
+    .settings-icon-desktop {
+        display: block;
+    }
+
+    .settings-icon-outer {
+        position: relative;
+        padding: 0;
+        margin-left: auto; /* align to right side */
+        width: 30px;
+        height: 30px;
+        margin-bottom: -10px;
+    }
+
+    /* DESCRIPTION PAGE (KATE) */
+    .back-button-container {
+        margin-top: 7%;
+        margin-left: -3%;
+    }
+    .header-description {
+        padding-top: 5%;
+        font-size: 1.5rem;
+        padding-left: 5%;
+    }
+
+    .desktop-only {
+        display: block;
+    }
+
+   
+    
+    /* PROFILE PAGE (MAGDALENA) */
+    .profile-page-container {
+        margin-top: 90px; /* to make space for top bar on desktop */
+    }
+    .profile-page-left {
+            width: 30%;
+            height: 100%;
+    }
+
+    .profile-page-right {
+            width: 70%;
+    }
+
+    .profile-page {
+            display: flex;
+    }
+
+    .profile-bio-outer {
+            color: black;
+            border-radius: 10%;
+            background: white;
+            padding: 20px;
+            box-sizing: border-box;
+    }
+
+    .follow-button {
+            color: black !important;
+    }
+    .profile-history-cards-outer {
+            width: 100%;
+            overflow: hidden; /* no scroll on desktop */
+    }
+    .profile-history-card {
+            max-width: 200px;
+    }
+
+    .profile-history-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            width: 100%;
+            justify-content: space-around;
+    }
+}

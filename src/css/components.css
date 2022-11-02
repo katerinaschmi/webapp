@@ -1,0 +1,941 @@
+:root {
+    --grey: #e2e2e2;
+    --lightblue: #3E85DF;
+    --darkblue: #061D47;
+}
+
+/* CONTINUE WITH COMPONENT (Erwan) */
+
+.continue-with-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.continue-text{
+    color: var(--grey);
+    font-family: forma-djr-text, sans-serif;
+    font-size: 1.2rem;
+
+}
+
+.continue-logos-cont{
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+}
+
+.icon {
+    color: var(--grey);
+    margin: auto;
+}
+
+/* BOTTOM NAVBAR (Igor) */
+
+.nav-cont {
+    background: var(--lightblue);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0.5em 0;
+    position: fixed;
+    bottom: 0;
+    overflow: hidden;
+    z-index: 999;
+    width: 100%;
+}
+
+.nav-icon {
+    color: var(--grey);
+}
+
+.nav-singlebutton-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-interline {
+    width: 0.1em;
+    height: 3em;
+    background-color: var(--grey);
+}
+
+.nav-underline {
+    width: 2.5em;
+    height: 0.1em;
+    background-color: var(--grey);
+}
+
+#navlast {
+    margin-right: 0.5em;
+}
+
+#navfirst {
+    margin-left: 0.7em;
+}
+
+/* Explore TOASTER (Igor) */
+
+.toaster {
+    font-family: forma-djr-text, sans-serif;
+    z-index: 999999;
+}
+
+
+/* CARDS FOR CURRENT STYLING (Erwan and Igor) */
+
+.main-card{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 13%;
+}
+
+.container-desktop-current-cards {
+    padding-bottom: 7%;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: 1.4fr 1.9fr 0.7fr;
+    position: relative;
+    justify-content: center;
+    width: 85%;
+    background-color: var(--grey);
+    border-radius: 20px;
+}
+
+.image-cards-container{
+    height: 100%;
+    overflow: hidden;
+    border-radius: 20px 0 0 20px;
+}
+
+.image-cards{
+    width: 180%;
+    height: 100%;
+    position: relative;
+    right: 40%;
+}
+
+.content-container{
+    width: auto;
+    margin-left: 0.6rem;
+    margin-right: 0.4em;
+    margin-top: 0.7em;
+    color: black;
+}
+
+.platform-cards{
+    width: 25%;
+}
+
+.profile-cards-container{
+    position: absolute;
+    width: 1.5em;
+    left: -4%;
+    top: 7%;
+    z-index: 99;
+}
+
+.profile-cards{
+    width:100%;
+    margin-bottom: 0.5rem;
+    filter: drop-shadow(0 0 0.85rem rgb(56, 56, 56));
+}
+
+.text-cards{
+    font-family: forma-djr-text, sans-serif;
+    margin: 0.5rem 0;
+}
+
+.title-content-card{
+    font-size: 1.2rem;
+}
+
+.whereat-content-card{
+    font-size: 1rem;
+}
+
+.crntepisode {
+    font-size: 1.6em;
+}
+
+.description-content-card{
+    font-size: 78%;
+}
+
+.add-series-arrow-container{
+    background-color: var(--lightblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    margin-top: 30%;
+    border: none;
+    cursor: pointer;
+}
+
+.add-series-arrow{
+    color: var(--grey);
+}
+
+/* CARDS FOR UPCOMING STYLING (ERWAN) */
+
+.card-container-upcoming{
+    display: grid;
+    grid-template-columns: 2fr 2.5fr;
+    position: relative;
+    justify-content: center;
+    width: 85%;
+    background-color: var(--grey);
+    border-radius: 20px;
+    height: 11.5em;
+}
+
+.upcoming-content-container {
+    padding-right: 0.3rem;
+    width: auto;
+    padding-left: 1rem;
+}
+
+.upcoming-image-cards-container {
+    height: 11.5rem;
+    overflow: hidden;
+    border-radius: 20px 0 0 20px;
+}
+
+/* .upcoming-card-gradient {
+    position: relative;
+    z-index: 1;
+    height: 11.5em;
+}
+
+.upcoming-card-gradient:after {
+    content: '';
+    border-radius: 20px 0 0 20px;
+    position: absolute;
+    left: 0.5em; top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, transparent, 70%, var(--grey))
+} */
+
+.image-cards-upcoming{
+    width: 230%;
+    position: relative;
+    right: 50%;
+}
+
+
+/* CARDS FOR EXPLORE STYLING (KATE) */
+
+.explore-card-container {
+    display: grid;
+    grid-template-rows: 1fr 2fr 0.3fr;
+    position: relative;
+    text-align: center;
+    background-color: var(--grey);
+    border-radius: 20px;
+    width: 12rem;
+    height: 26rem;
+    margin-top: 2em;
+    margin-right: 2em;
+    margin-left: 1em;
+}
+
+.image-explore-cards-container{
+    width: 12rem;
+    height: 10rem;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0px;
+}
+
+.explore-card-gradient {
+    height: 8.1rem;
+}
+
+.image-explore-cards{
+    width: 120%;
+    position: relative;
+    right: 10%;
+}
+
+.explore-profile-cards-container{
+    position: absolute;
+    width: 1.5em;
+    left: -8%;
+    top: 6%;
+    z-index: 99;
+}
+
+.explore-profile-cards {
+    width: 120%;
+    margin-bottom: 0.2rem;
+    filter: drop-shadow(0 0 0.85rem rgb(56, 56, 56));
+}
+
+.explore-content-container {
+    text-align: left;
+    margin-left: 0.7rem;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 5%;
+}
+
+.explore-title-content-card {
+    font-size: 1.3rem;
+    padding-bottom: 0.7rem;
+    font-family: forma-djr-text, sans-serif;
+}
+
+.explore-content-card{
+    font-size: 0.9rem;
+    font-family: forma-djr-text, sans-serif;
+    padding-right: 5%;
+}
+
+.platform-icons {
+    width: 25%;
+    margin-top: 6%;
+}
+
+.plus-button-container{
+    background-color: var(--lightblue);
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    bottom: -2%;
+    left: 37%;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plus-button{
+    color: var(--grey);
+}
+
+/* AddButton (Igor & Kate) */
+.modalbox {
+    font-family: forma-djr-deck, sans-serif;
+}
+
+.modalbox-title {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.modalbox-button-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.modalbox-button {
+    margin-bottom: 0.8em;
+    font-size: 1.4em;
+    font-family: forma-djr-deck, sans-serif;
+    width: 9em;
+    height: 2.5rem;
+    border-radius: 25px;
+    background-color: var(--peach);
+    border: none;
+    cursor: pointer;
+}
+
+.modalbox-button:hover {
+    border: 4px solid #F0BD8C ;
+    background-color: #e2e2e2;
+}
+
+
+/* DESCRIPTION COMPONENTS (KATE) */
+/* THE TOP (KATE) */
+.desktop-only {
+    display: none;
+}
+
+.desktop-top-card{
+    display: none;
+}
+
+.description-top {
+    display: block;
+}
+
+.description-image {
+    width: 100%;
+    position: fixed;
+    z-index: -2;
+}
+
+.description-gradient {
+    position: relative;
+    z-index: -1;
+    height: 35rem;
+}
+
+.description-gradient:after {
+    content: '';
+    background: linear-gradient(to bottom, transparent, 70%, rgb(37, 37, 37));
+    position: fixed;
+    top: 0; left: 0;
+    height: 35rem;
+    width: 100%;
+    z-index: -1;
+}
+
+.back-button-container {
+    position: fixed;
+    top: 3%;
+    left: 5%;
+    z-index: 99;
+}
+
+.back-button {
+    color: var(--peach);
+    filter: drop-shadow(3px 5px 2px rgba(0, 0, 0, 0.74));
+}
+
+.text-container {
+    text-shadow: 5px 3px 4px #000000;
+    color: var(--grey);
+    margin-top: -45%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 10%;
+}
+
+.description-header {
+    font-size: 2rem;
+    font-family: forma-djr-deck, sans-serif;
+    padding-bottom: 5%;
+}
+
+.description-text {
+    font-family: forma-djr-text, sans-serif;
+    font-size: 1rem;
+}
+/* THE EPISODE CARD (KATE) */
+.episode-card-container{
+    display: grid;
+    grid-template-columns: 2fr 2fr 0.5fr;
+    position: relative;
+    justify-content: center;
+    width: 85%;
+    background-color: var(--grey);
+    border-radius: 20px;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.image-episode-card {
+    height: 4.8rem;
+    overflow: hidden;
+    border-radius: 20px 0 0 20px;
+}
+
+.episode-image {
+    width: 130%;
+    position: relative;
+    right: 10%;
+}
+
+.episode-name {
+    font-family: forma-djr-deck, sans-serif;
+    font-size: 1.1rem;
+    padding-top: 6%;
+    padding-left: 6%;
+}
+
+.episode-time {
+    font-family: forma-djr-text, sans-serif;
+    font-size: 1rem;
+    padding-top: 5%;
+    padding-left: 6%;
+}
+
+.add-episode {
+    background-color: var(--lightblue);
+    display: flex;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: 120%;
+}
+
+.add-episode-button {
+    color: var(--grey);
+}
+
+.desktop-plus-button {
+    display: none;
+}
+/* THE ACTOR (KATE) */
+.actor-container {
+    padding-top: 5%;
+}
+
+.actor-content {
+    display: flex;
+    flex-direction: row;
+    padding-left: 5%;
+}
+
+.actor-image {
+    width: 5rem;
+}
+
+.actor-name {
+    font-family: forma-djr-deck, sans-serif;
+    font-size: 1.7rem;
+    color: var(--grey);
+    padding-top: 7%;
+    padding-left: 5%;
+}
+
+/* TOPNAV (Igor) */
+.topnav-cont {
+    display: flex;
+    flex-direction: row;
+    font-family: forma-djr-text, sans-serif;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2em 2em;
+    height: 2em;
+}
+
+.topnav {
+    background-color: var(--darkblue);
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 9999;
+}
+
+.topnav-singleitem-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topnav-link {
+    text-transform: uppercase;
+    color: var(--grey);
+    font-size: 1.3rem;
+}
+
+.topnav-interline {
+    background-color: var(--grey);
+    width: 0.08em;
+    height: 1.1em;
+    margin-bottom: 0.2em;
+}
+
+.active{
+    border-bottom: var(--lightblue) 4px solid;
+}
+
+/* helping topnav on current, upcoming and wishlist */
+
+.current-main, .upcoming-main, .wishlist-main {
+    margin-top: 100px;
+}
+
+/* DESKTOP */
+
+.desktop {
+    display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+    .mobile {
+        display: none;
+    }
+    .desktop {
+        display: block;
+    }
+
+    /* FOOTER STYLING (Igor) */
+
+    .footer-main {
+        padding-top: 4em;
+        background-color: var(--darkblue);
+    }
+
+    .footer-logo-cont {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-links-cont {
+        display: flex;
+        justify-content: space-around;
+        padding: 2em 20%;
+        font-family: forma-djr-text, sans-serif;
+        font-size: 1.3em;
+    }
+
+    .footer-logo {
+        width: 12em;
+    }
+    
+    .footerlink {
+        text-decoration: none;
+        color: var(--grey);
+    }
+    
+    /* DESKTOP TOP NAVIGATION (Igor) */
+
+    /* margin to mains */
+    .explore-main {
+        margin-top: 100px;
+    }
+
+    .topdesk-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1em 3em;
+    }
+
+    .topdesk-general-cont {
+        background-color: var(--darkblue);
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        z-index: 9999;
+    }
+
+    .topdesk-logo {
+        width: 10em;
+    }
+
+    .topdesk-links {
+        display: flex;
+        font-family: forma-djr-deck, sans-serif;
+        font-size: 1.5em;
+    }
+
+    .topdesk-navlink {
+        color: var(--grey);
+        margin-left: 1em;
+    }
+
+    /* DESKTOP TOP SECONDARY NAVIGATION (Igor) */
+    
+    .snd-desknav {
+        margin-top: 7em;
+        margin-bottom: 2em;
+        display: flex;
+        justify-content: center;
+    }
+
+    .snd-desknav-cont {
+        display: flex;
+        justify-content: space-around;
+        width: 40%;
+    }
+
+    .snd-desknav-single-cont {
+        text-align: center;
+        width: 9em;
+    }
+
+    .snd-desknav-link {
+        font-family: forma-djr-deck, sans-serif;
+        font-size: 1.2em;
+        border: solid var(--darkblue);
+        color: var(--grey);
+        background-color: var(--lightblue);
+        border-radius: 25px;
+        padding: 0.5em 1em;
+    }
+
+    /* DESKTOP CONTINUE WITH (Kate) */
+
+    .continue-text {
+        font-size: 2rem;
+    }
+
+    /* CARDS ON CURRENTS (ERWAN) */
+
+    .current-main{
+        margin: 0 20%;
+    }
+
+    .card-container{
+        width: 60%;
+        grid-template-columns: none;
+        grid-template-rows: 0.8fr 0.2fr;
+        margin: 3rem 0;
+    }
+
+    .image-cards-container{
+        border-radius: 20px 20px 0 0;
+        height: 9rem;
+    }
+
+    .image-cards{
+        width: 100%;
+        right: 0;
+        height: 250%;
+    }
+
+    .card-gradient:after{
+        display: none;
+    }
+
+    .add-series-arrow-container{
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        bottom: 4%;
+        right: 4%;
+    }
+
+    .currentbox{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card-gradient{
+        height: 8rem;
+    }
+
+    /* CARDS ON UPCOMING AND WISHLIST (ERWAN) */
+
+    .upcoming-main{
+        margin: 0 20%;
+    }
+
+    .wishlist-main{
+        margin: 0 20%;
+    }
+
+    .card-container-upcoming{
+        width: 60%;
+        grid-template-columns: none;
+        grid-template-rows: 0.8fr 0.2fr;
+        margin: 4rem 0;
+        height: 20em;
+    }
+
+    .upcoming-image-cards-container{
+        border-radius: 20px 20px 0 0;
+        height: 8rem;
+    }
+
+    .image-cards-upcoming{
+        width: 100%;
+        right: 0;
+    }
+
+    .upcoming-card-gradient:after{
+        display: none;
+    }
+
+    .upcoming-card-gradient{
+        height: 8rem;
+    }
+
+    /* DESCRIPTION TOP (KATIE) */
+    .desktop-top-card-container {
+        display: flex;
+        flex-direction: row;
+        background-color: var(--grey);
+        border-radius: 20px;
+        margin-top: 8%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .description-image-container{
+        height: 25rem;
+        width: 60%;
+        overflow: hidden;
+        border-radius: 20px 0 0 20px;
+    }
+    
+    .desktop-description-image {
+        width: 100%;
+        position: relative;
+        bottom: 10%;
+    }
+
+    .desktop-text-container{
+        margin-top: 5%;
+    }
+
+    .desktop-description-header {
+        font-family: forma-djr-deck, sans-serif;
+        font-size: 2.5rem;
+        padding-left: 5%;
+        padding-bottom: 5%;
+    }
+
+    .desktop-description-text {
+        font-family: forma-djr-text, sans-serif;
+        font-size: 1.5rem;
+        padding-left: 5%;
+        padding-right: 10%;
+        padding-bottom: 5%;
+    }
+    /* DESCRIPTION episodes (KATIE) */
+    .mobile {
+        display: none;
+    }
+
+    .desktop-only {
+        display: block
+    }
+
+    .background2{
+        background-color: transparent;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .episodes-cards-container{
+        display: flex;
+        flex-direction: row;
+        margin-left: 3%;
+        margin-right: 2%;
+    }
+
+    .header-description {
+        font-size: 2.7rem;
+        padding-bottom: 2%;
+    }
+
+    .image-episode-card {
+        height: 8rem;
+    }
+
+    .episode-name {
+        font-size: 1.4rem;
+        padding-top: 10%;
+    }
+    
+    .episode-time {
+        font-size: 1.2rem;
+        padding-top: 7%;
+    }
+    
+    .add-episode {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-top: 100%;
+    }
+
+    .background3{
+        background-color: transparent;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    /* DESCRIPTION actors (KATIE) */
+    .actors-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .actor-container {
+        padding-top: 3%;
+    }
+
+    .actor-content {
+        margin-bottom: 6%;
+    }
+
+    .actor-name {
+        font-size: 2rem;
+        padding-top: 2%;
+    }
+
+    .desktop-plus-button {
+        display: block;
+    }
+
+    /* EXPLORE cards (KATIE) */
+    .explore-card-container {
+            width: 18rem;
+            height: 24rem;
+            margin-left: 2rem;
+        }
+        
+        .image-explore-cards-container{
+            width: 18rem;
+        }
+        
+        .image-explore-cards{
+            width: 100%;
+            right: 0%;
+        }
+        
+        .explore-profile-cards-container{
+            width: 2rem;
+        }
+        
+        .explore-content-container {
+            margin-left: 1.3rem;
+            margin-top: 7%;
+        }
+        
+        .explore-content-card{
+            font-size: 1rem;
+        }
+        
+        .platform-icons {
+            width: 15%;
+            margin-top: 6%;
+        }
+        
+        .plus-button-container{
+            bottom: 4%;
+            left: 80%;
+            z-index: 99;
+        }
+    }
+
+    /* HISTORY CARDS (MAGDALENA) */
+    .history-card-container {
+        display: grid;
+        grid-template-rows: 1fr 2fr 0.3fr;
+        position: relative;
+        text-align: center;
+        background-color: var(--grey);
+        border-radius: 20px;
+        width: 9.6rem;
+        height: 26rem;
+        margin-top: 2em;
+        margin-right: 2em;
+        margin-left: 1em;
+    }
+
+    .image-history-cards-container {
+        width: 9.6rem;
+        height: 10rem;
+        overflow: hidden;
+        border-radius: 20px 20px 0 0px;
+    }
+
+    .image-history-cards{
+        width: 150%;
+        position: relative;
+        right: 20%;
+    }
